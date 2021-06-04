@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".studSetActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/studSetsToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#4CAF50">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/studSetsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Sets"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <GridView
+        android:id="@+id/studSetsGridView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:horizontalSpacing="16dp"
+        android:verticalSpacing="16dp"
+        android:padding="16dp"
+        android:numColumns="2">
+
+    </GridView>
+
+
+
+</LinearLayout>
